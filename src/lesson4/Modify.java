@@ -27,7 +27,7 @@ public class Modify {
         input.close();
         drawField();
         System.out.printf("%s win!", endGamePrint());
-    }
+    } 
 
     private static void mapInit() {
         map = new char[SIZE][SIZE];
