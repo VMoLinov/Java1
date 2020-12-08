@@ -28,7 +28,7 @@ public class Employee {
 
     private static void pushEmployers() {
         personArray[0] = new Employee("Vadim Petrov", "auto-tester", "vm@example.com",
-                "+79161232323", 70000, 25);
+                "+79161232323", 70000, 24);
         personArray[1] = new Employee("Maxim Titov", "front-end", "mt@exapmle.com",
                 "+79289879898", 60000, 42);
         personArray[2] = new Employee("Roman Nikulin", "technical chief", "rn@example.com",
