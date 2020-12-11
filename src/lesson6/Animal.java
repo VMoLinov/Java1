@@ -6,23 +6,30 @@ public abstract class Animal {
     protected String name;
     protected String color;
     protected int age;
+    protected int maxRun;
+    protected int maxSwim;
+    protected double maxJump;
 
-    public Animal(String name, String color, int age) {
+
+    public Animal(String name, String color, int age, int maxRun, int maxSwim, double maxJump) {
         this.name = name;
         this.color = color;
         this.age = age;
+        this.maxRun = maxRun;
+        this.maxSwim = maxSwim;
+        this.maxJump = maxJump;
         count++;
     }
 
     public Animal() {
-        this(null, null, 0);
+        this(null, null, 0, 0, 0, 0);
     }
 
-    public abstract void run(int i);
+    public abstract boolean run(int i);
 
-    public abstract void swim(int i);
+    public abstract boolean swim(int i);
 
-    public abstract void jump(double i);
+    public abstract boolean jump(double i);
 
     public static void printCount() {
         System.out.printf("Total animals: %d%n", count);
@@ -34,6 +41,9 @@ public abstract class Animal {
                 "name='" + name + '\'' +
                 ", color='" + color + '\'' +
                 ", age=" + age +
+                ", maxRun=" + maxRun +
+                ", maxSwim=" + maxSwim +
+                ", maxJump=" + maxJump +
                 '}';
     }
 }
