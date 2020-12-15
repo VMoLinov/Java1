@@ -6,18 +6,18 @@ public class Cat {
     private final String color;
     private final int age;
     private final int appetite;
-    private boolean satiety;
+    private double satiety;
 
-    public Cat(String name, String color, int age, int appetite, boolean satiety) {
+    public Cat(String name, String color, int age, int appetite) {
         this.name = name;
         this.color = color;
         this.age = age;
         this.appetite = appetite;
-        this.satiety = satiety;
+        satiety = 0;
     }
 
     public Cat() {
-        this(null, null, 0, 0, false);
+        this(null, null, 0, 0);
     }
 
     public void eat(Plate x) {
@@ -28,7 +28,7 @@ public class Cat {
         return name;
     }
 
-    public boolean isSatiety() {
+    public double getSatiety() {
         return satiety;
     }
 

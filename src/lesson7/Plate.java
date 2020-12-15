@@ -1,6 +1,10 @@
 package lesson7;
 
+import java.util.Random;
+
 public class Plate {
+
+    Random rand = new Random();
 
     private int food;
 
@@ -16,12 +20,15 @@ public class Plate {
         this.food += food;
     }
 
-    public boolean decreaseFood(int x) {
-        if (food >= x) {
-            food -= x;
-            return true;
-        } else System.out.println("not enough food");
-        return false;
+    public double decreaseFood(int x) {
+        while (food > 0) {
+            int y = rand.nextInt(x) + 1; //How much cat will be eat
+            if (food >= y) {
+                food -= y;
+                return (double) y / x * 100; //Percent satiety
+            }
+        }
+        return 0;
     }
 
     public void printInfo() {
