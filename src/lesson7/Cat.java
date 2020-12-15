@@ -20,16 +20,16 @@ public class Cat {
         this(null, null, 0, 0, false);
     }
 
+    public void eat(Plate x) {
+        satiety = x.decreaseFood(appetite);
+    }
+
     public String getName() {
         return name;
     }
 
     public boolean isSatiety() {
         return satiety;
-    }
-
-    public void eat(Plate x) {
-        satiety = x.decreaseFood(appetite);
     }
 
     @Override

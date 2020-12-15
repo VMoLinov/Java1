@@ -13,7 +13,7 @@ public class Main {
         Cat[] cats = {cat1, cat2, cat3, cat4, cat5};
         plate.printInfo();
         for (Cat cat : cats) {
-            plate.setAddFood(1);
+            plate.addFood(1);
             cat.eat(plate);
             System.out.printf("%s's satiety is %s%n", cat.getName(), cat.isSatiety());
             plate.printInfo();
