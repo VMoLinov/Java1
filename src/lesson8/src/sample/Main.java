@@ -1,7 +1,6 @@
 package sample;
 
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.*;
 import javafx.stage.Stage;
@@ -16,9 +15,7 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-
-    public static void main(String[] args) throws InterruptedException {
-        Controller game = new Controller();
+    public static void main(String[] args) {
         launch(args);
     }
 }
