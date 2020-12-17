@@ -2,7 +2,6 @@ package sample;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-
 import java.util.Random;
 
 public class Controller {
