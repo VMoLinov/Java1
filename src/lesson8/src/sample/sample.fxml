@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0"
+            prefWidth="350.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controller">
+    <children>
+        <Button defaultButton="true" layoutX="115.0" layoutY="396.0" mnemonicParsing="false" onAction="#doRandomAction"
+                prefHeight="58.0" prefWidth="121.0" text="Готово" textAlignment="CENTER" wrapText="true"
+                AnchorPane.leftAnchor="114.0" AnchorPane.rightAnchor="114.0">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Button>
+        <TextField fx:id="numberInputField" layoutX="38.0" layoutY="309.0" onAction="#doRandomAction" prefHeight="46.0"
+                   prefWidth="274.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="38.0">
+            <font>
+                <Font size="24.0"/>
+            </font>
+            <padding>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0"/>
+            </padding>
+        </TextField>
+        <Label fx:id="header" layoutX="38.0" layoutY="24.0" prefHeight="105.0" prefWidth="274.0"
+               text="Добро пожаловать в игру Угадай число!" textAlignment="CENTER" textFill="#13a100" wrapText="true"
+               AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="38.0">
+            <font>
+                <Font name="System Bold" size="24.0"/>
+            </font>
+        </Label>
+        <Label fx:id="content" layoutX="39.0" layoutY="160.0" prefHeight="105.0" prefWidth="274.0"
+               text="Введите максимально возможное значение загаданного числа." textAlignment="CENTER" wrapText="true"
+               AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="38.0"
+               AnchorPane.topAnchor="160.0">
+            <font>
+                <Font name="System Italic" size="24.0"/>
+            </font>
+        </Label>
+        <Label layoutX="250.0" layoutY="501.0" text="\@VMolinov ver. 1.0" wrapText="true">
+            <font>
+                <Font size="10.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

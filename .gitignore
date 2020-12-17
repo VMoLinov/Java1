@@ -4,3 +4,23 @@ out/production/Java1/lesson2/arrays.class
 *.pdf
 
 *.class
+
+src/lesson8/.idea/compiler.xml
+
+src/lesson8/.idea/description.html
+
+src/lesson8/.idea/encodings.xml
+
+src/lesson8/.idea/libraries/lib.xml
+
+src/lesson8/.idea/misc.xml
+
+src/lesson8/.idea/gradle.xml
+
+src/lesson8/.idea/modules.xml
+
+src/lesson8/.idea/uiDesigner.xml
+
+src/lesson8/.idea/vcs.xml
+
+src/lesson8/out/production/lesson8/sample/sample.fxml
