@@ -2,7 +2,6 @@ package sample;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-
 import java.util.Random;
 
 public class Controller {
@@ -47,7 +46,7 @@ public class Controller {
         if (!message.isBlank()) {
             try {
                 number = Integer.parseInt(message);
-                if (number > 0) {
+                if (number >= 0) {
                     guessCount = setGuessCount(number);
                     randomNumber = rand.nextInt(number + 1);
                     header.setText("Загадано число от 0 до " + number);
@@ -78,7 +77,7 @@ public class Controller {
         if (!message.isBlank()) {
             try {
                 number = Integer.parseInt(message);
-                if (number > 0) {
+                if (number >= 0) {
                     if (--guessCount > 0) checkNumber();
                     else endGame();
                 } else error();
