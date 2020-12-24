@@ -47,7 +47,7 @@ public class Controller {
             try {
                 number = Integer.parseInt(message);
                 if (number >= 0) {
-                    guessCount = setGuessCount(number);
+                    guessCount = number * number / 500;
                     randomNumber = rand.nextInt(number + 1);
                     header.setText("Загадано число от 0 до " + number);
                     content.setText("Попробуйте угадать это число! Осталось " + guessCount + " попыток");
@@ -57,12 +57,6 @@ public class Controller {
                 error();
             }
         }
-    }
-
-    private int setGuessCount(int x) {
-        if (x < 100) return 3;
-        else if (x < 1000) return 20;
-        else return 50;
     }
 
     private void error() {
